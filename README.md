@@ -12,7 +12,7 @@ Huge amount of food is wasted in restaurants. The wastage is caused because of t
 4) Food Items not as per expectations of consumers.<br /><br />
 Such wastage results in extra cost to the restaurants and inefficient estimates while preparing food or managing inventory make these restaurants spend extra money and resources.<br />
 Moreover, the food items that are wasted could have been used to facilitate someone in need.<br /><br />
-Proposed Solution:<br /><br /><br />
+Proposed Solution:<br /><br />
 To overcome such problem, we are planning to build an application that uses TensorFlow, a machine learning software, to find the pattern in the daily activities of restaurants. Further, we will create a Dashboard for the Manager that will show the current scenario of restaurant to him and suggest ways to how the wastage of resources can be minimized.<br /><br />
 Benefits of analytics include:<br /><br />
 1) Efficient use of raw materials:<br />
