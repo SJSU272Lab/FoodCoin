@@ -1,4 +1,4 @@
-# Fall16 – Team No: 8
+# Fall16 â€“ Team No: 8
 
 # Project Title: FoodCoin
 
@@ -19,14 +19,15 @@ Benefits of analytics include:
     a) Manager would be able to purchase inventory wisely.
     b) Rotation of items in the inventory will lead in better utilization.
 2) Using fresh menu items:
-    a) Better assistance to Chef to decide daily menu by making him more aware about the inventory and customers’ count.
+    a) Better assistance to Chef to decide daily menu by making him more aware about the inventory and customersâ€™ count.
 3) Ensuring quality of food:
     a) Help the manager to know about the factors to ensure better food quality.
-4) Assist in meeting diner’s expectation:
+4) Assist in meeting dinerâ€™s expectation:
     a) Help management to decide the quantity of food item to be served to user.
     b) Assist in predicting the likes and dislikes of users.
 
 # Architectural Flow Diagram:
+![alt Architecture diagram]( /Team Project - FoodCoin/Architecture Design.png?raw=true "Architecture Diagram")
 
 
 # Flow Chart:
