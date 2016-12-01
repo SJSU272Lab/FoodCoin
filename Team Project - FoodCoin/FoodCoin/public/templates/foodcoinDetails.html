@@ -1,0 +1,257 @@
+<!-- Navigation -->
+    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                    Menu <i class="fa fa-bars"></i>
+                </button>
+                
+                <a class="navbar-brand page-scroll" ui-sref="index">
+                    <img alt="" style="height: 30px;width: 130px" src="img/foodcoin.png">
+                </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                <ul class="nav navbar-nav">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <li class="hidden">
+                        <a target="_self" href="#page-top"></a>
+                    </li>
+                    <li>
+						<button data-toggle="modal" data-target="#signInModal" class="btn btn-default btn-lg text-center">
+								Sign In 
+						</button>
+					</li>
+                    <li style="">
+						<button data-toggle="modal" data-target="#registerationModal" class="btn btn-default btn-lg text-center">
+								Register
+						</button>
+					</li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+    
+    <!-- Modal Sign In-->
+	<div class="modal fade" id="signInModal" role="dialog">
+		<div class="modal-dialog" style="width: 100%;">
+	
+			<!-- Modal content-->
+			<div class="modal-content" style="margin-right: auto;margin-left: auto;height: 100%; width: 50%;background: linear-gradient(rgba(1,0,0,0.9), rgba(1,0,0,0.75))	">
+				<!-- <div class="modal-header modalHeader">
+					<button type="button" class="close" style="color:white;" data-dismiss="modal">&times;</button>
+					<h4 class="modal-title">Sign In</h4>
+				</div> -->
+			<div class="modal-body" style="height: 100%; padding:0px">
+				<div class="" style="width: 100%">
+					<!-- <div class="col-md-3"></div> -->
+					<div class="col-md-12">
+						<div style="width: 100%" class="divBorder">
+							<ul class="nav nav-tabs bgColor">
+								<li class="active width-50 tabs-style"><a data-toggle="tab" target="_self" id="signinStyling"
+									href="#signinPanel">Sign in</a></li>
+								<li class="width-50 tabs-style"><a data-toggle="tab" target="_self" id="registerStyling"
+									href="#registerPanel">Register</a></li>
+							</ul>
+							<div class="tab-content">
+								<div id=signinPanel class="signInDiv tab-pane fade in active">
+									<div class="error-msg" ng-hide="error">
+											<strong>{{msg}}</strong>
+									</div>
+									<div>
+										<form class="form-horizontal" action="" method="">
+											<div class="col-sm-12 field-margin">
+												<input type="email" ng-model="email" class="form-control"
+													id="email" placeholder="Email">
+												<!-- <span id="email-error" class="error-msg "></span> -->
+											</div>
+											<div class="col-sm-12 field-margin">
+												<input type="password" ng-model="password"
+													class="form-control" id="password" placeholder="Password">
+											</div>
+											<div class="col-sm-12 field-margin">
+												<button type="submit" style="width: 100%"
+													ng-click="signin()" class="btn btn-primary btnLayout">Sign
+													in</button>
+											</div>
+											<div class="col-sm-12 field-margin">
+												<button type="button" class="btn btn-danger btnLayout" style="color:white;" data-dismiss="modal">Close
+												</button>
+											</div>
+										</form>
+									</div>
+								</div>
+								<div id="registerPanel" class="signUpDiv tab-pane fade">
+									<div class="error-msg" ng-hide="error1">
+											<strong>{{msg}}</strong>
+									</div>
+									<div class="error-msg" ng-hide="error4">
+										<strong>{{msg}}</strong>
+									</div>
+									<div>
+										<form class="form-horizontal" action="" method="">
+											<div class="col-sm-12 field-margin">
+												<input type="email" class="form-control" ng-model="email"
+													placeholder="Email" required="required">
+											</div>
+											<div class="col-sm-12 field-margin">
+												<input type="email" class="form-control"
+													ng-model="emailCopy" placeholder="Re-enter Email"
+													required="required">
+											</div>
+											<div class="col-sm-12 field-margin">
+												<input type="password" class="form-control"
+													ng-model="password" placeholder="Password">
+											</div>
+											<div class="col-sm-12 field-margin">
+												<div class="col-sm-6"
+													style="padding-left: 0; padding-right: 10px;">
+													<input type="text" class="form-control" ng-model="fname"
+														placeholder="First Name" required="required">
+												</div>
+												<div class="col-sm-6"
+													style="padding-left: 10; padding-right: 0px;">
+													<input type="text" class="form-control" ng-model="lname"
+														placeholder="Last Name" required="required">
+												</div>
+											</div>
+											<div class="col-sm-12 field-margin">
+												<input type="number" class="form-control"
+													ng-model="phone" placeholder="Mobile No">
+											</div>
+											<div class="col-sm-12 field-margin">
+												<button type="submit" style="width: 100%"
+													class="btn btn-primary btnLayout" ng-click="registerUser()">Register</button>
+											</div>
+											<div class="col-sm-12 field-margin">
+												<button type="button" class="btn btn-danger btnLayout" style="color:white;" data-dismiss="modal">Close
+												</button>
+											</div>
+										</form>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- <div class="col-md-5"></div> -->
+				</div>
+			</div>
+		</div>
+		</div>
+	</div>
+	
+	
+	 <!-- Modal User Login Verification-->
+	<div class="modal fade" id="userVerificationModal2" role="dialog">
+		<div class="modal-dialog" style="width: 90%;">
+	
+			<!-- Modal content-->
+			<div class="modal-content" style="margin-right: auto;margin-left: auto;height: 100%; width: 50%;background: linear-gradient(rgba(1,0,0,0.9), rgba(1,0,0,0.75))	">
+				<div class="modal-header modalHeader">
+					<h4 class="modal-title">Verify Your Mobile Number</h4>
+				</div>
+				<div class="modal-body" style="height: 100%">
+					<div id="" class="signUpDiv">
+						<div class="error-msg" ng-hide="error5">
+								<strong>{{msg}}</strong>
+						</div>
+						
+						<div>
+							<form class="form-horizontal" action="" method="">
+								<div class="col-sm-12 field-margin">
+									<input type="text" class="form-control" ng-model="code2"
+											placeholder="One Time Password">
+								</div>
+								
+								<div class="col-sm-12 field-margin">
+									<button type="submit" style="width: 100%"
+										class="btn btn-primary btnLayout" ng-disabled="" ng-click="verifyUserLogin()">Verify Mobile Number</button>
+								</div>
+								<div class="col-sm-12 field-margin">
+									<button type="submit" style="width: 100%"
+										class="btn btn-primary btnLayout" ng-click="resendLoginCode()">Resend Code</button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	 <!-- Modal User Verification-->
+	<div class="modal fade" id="userVerificationModal" role="dialog">
+		<div class="modal-dialog" style="width: 90%;">
+	
+			<!-- Modal content-->
+			<div class="modal-content" style="margin-right: auto;margin-left: auto;height: 100%; width: 50%;background: linear-gradient(rgba(1,0,0,0.9), rgba(1,0,0,0.75))	">
+				<div class="modal-header modalHeader">
+					<h4 class="modal-title">Verify Your Mobile Number</h4>
+				</div>
+				<div class="modal-body" style="height: 100%">
+					<div id="" class="signUpDiv">
+						<div class="error-msg" ng-hide="error3">
+								<strong>{{msg}}</strong>
+						</div>
+						
+						<div>
+							<form class="form-horizontal" action="" method="">
+								<div class="col-sm-12 field-margin">
+									<input type="text" class="form-control" ng-model="code"
+											placeholder="One Time Password">
+								</div>
+								
+								<div class="col-sm-12 field-margin">
+									<button type="submit" style="width: 100%"
+										class="btn btn-primary btnLayout" ng-disabled="" ng-click="verifyUser()">Verify Mobile Number</button>
+								</div>
+								<div class="col-sm-12 field-margin">
+									<button type="submit" style="width: 100%"
+										class="btn btn-primary btnLayout" ng-click="resendCode()">Resend Code</button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	 <!-- Modal Registeration-->
+	<div class="modal fade" id="registerationModal" role="dialog">
+		<div class="modal-dialog" style="width: 90%;">
+	
+			<!-- Modal content-->
+			<div class="modal-content" style="margin-right: auto;margin-left: auto;height: 100%; width: 50%;background: linear-gradient(rgba(1,0,0,0.9), rgba(1,0,0,0.75))	">
+				<div class="modal-header modalHeader">
+					<button type="button" class="close" style="color:white;" data-dismiss="modal">&times;</button>
+					<h4 class="modal-title">Register</h4>
+				</div>
+				<div class="modal-body" style="height: 100%">
+					
+				</div>
+			</div>
+	
+		</div>
+	</div>
+
+    
+
+    <!-- Contact Section -->
+    <div id="detailsFoodcoin" class="container content-section sectionHeight text-center" style="padding-bottom: 5%;">
+        <div class="container">
+            <div class="col-md-12 bgGradient">
+                <!-- <div id="graph2" style="height: 400px"></div> -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer style="">
+        <div class="container text-center">
+            <p style="font-size: 15px">Copyright &copy; FoodCoin 2016</p>
+        </div>
+    </footer>
