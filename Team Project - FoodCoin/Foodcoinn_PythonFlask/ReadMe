@@ -1,1 +1,47 @@
-This the python flask backened application for foodcoin. This implements Decision Tree and NLTK for sentiment analysis.
+Python Flask Application URL from IBM Bluemix :- Foodcoin.mybluemix.net
+
+This is a Python Flask backened server which implements various Machine learning algorithms like Decion Tree for calculation of Food Quantity to be prepared and NLTK sentiment anlyser that analyse the reviews of the customers and predict there tone(negative or positive). It also implements the message publish logic using the amazon sns servic.
+Python Flask APIs for various functions:- 
+
+
+1. Foodcoin.mybluemix.net/inputData --> POST request  
+
+Objective:- Create a decision tree from the training data.
+Input :- Receives input data in json form. This is the data which user will upload in CSV format and this will be used to train the decion tree.
+Output :- Success message if decision tree is formed correctly.
+
+2. Foodcoin.mybluemix.net/calculateQuantity --> POST request
+
+Objective :- Calculate the quantity of food that need to be prepared for a particular day.
+Input :- Receives input in the json format. The input variables will be day, day type & guests expected.
+Output :- Returns the quantity of food that need to be prepared for that particular day.
+
+3. Foodcoin.mybluemix.net/inputReviews --> POST request
+
+Objective :- Calculate the tone of the reviews which were previously pospted by the users.
+Input :- Revceives input in form of a list of reviews that were previously updated by the customers for a particular restaurant.
+Output:- Returns the percentage of the positive and negative reviews after running the NLTK data analysis.
+
+4. Foodcoin.mybluemix.net/sentimentalAnalysis --> POST request
+
+Objective :- Calculate the tone of a single review from a customer. This will tell whether a particular review is positive or negative.
+Input :- Receives input a single review in json format.
+Output :- Returns the tone of the review i.e. negative of positive
+
+5. Foodcoin.mybluemix.net/subscribeUser --> POST request
+
+Objective :- Add a user to subcribers list for free food in future. Add the user to the subscription of the AMAZON SNS topic.
+Input :- Receives phone number of the subscriber.
+Output:- Returns success message if the subscriber is added successfully.
+
+6. Foodcoin.mybluemix.net/publishMsssage --> POST request
+
+Objective :- Publish message to all the subscribers to the AMAZON SNS topic.
+Input :- Receives message from the restaurant owner which he needs to publish to the subcribers.
+Output :- Returns success message if the message is published successfully to all the subscribers.
+
+7. Foodcoin.mybluemix.net/wasteChange --> GET request
+
+Objective :- Calculate the change in revenue lost and qunatity of data wasted after 1 week of using our application.
+Input :- Receives message from the restaurant owner in which he will send the data of week before and after using our web application. Data will be day, amout of food wasted and revenue lost for each day.
+Output :- Returns the percentage for revenue gained and amout of food wasted(less than earlier).                                   
