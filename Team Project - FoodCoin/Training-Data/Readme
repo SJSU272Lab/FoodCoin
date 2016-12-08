@@ -1,0 +1,17 @@
+This file contains all the training data which we have used for training our machine learning data.
+Description of the files:-
+negativeThoughts.yml :- This file contains the negative words which will train the nltk algorithm foe negative sentences.
+positiveThoughts.yml :- This file contains the positive words which will train the nltk algorithm foe positive sentences. 
+QunatityData.csv:- It contains the data which will train our decsion tree
+WeeklyTable.csv
+Sentiments
+Menu.csv
+Menu_Day.scv
+Invoice.csv
+Inventory.csv
+Sentiments Train Data- Test1.csv,Test2.csv,Test3.csv,Test4.csv
+
+yelp_academic_dataset_review.json
+yelp_academic_dataset_business.json
+yelp_academic_dataset_checkin.json
+
