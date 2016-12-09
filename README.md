@@ -2,7 +2,7 @@
 
 # Project Title: FoodCoin
 # Project URl : http://foodcoin272.mybluemix.net/#/ 
-# Python Flask Project URl : http://foodcoin.mybluemix.net/
+# Python Flask URl for Machine learning of Input Data : http://foodcoin.mybluemix.net/
 # Project Yelp dataset Link https://drive.google.com/open?id=0BxgoF01Bp1G5Z1h1TWVsV1RyQmc
 # Project Abstract:
 
