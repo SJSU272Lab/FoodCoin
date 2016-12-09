@@ -1,0 +1,91 @@
+
+<div class="next-card">
+    <div class="next-card-filter">
+
+<div  ng-show="onload" style="height: inherit">
+
+    <div ng-hide="step1hide" class=" step1 text-center">
+
+        <h1>Let's get you Started</h1>
+        <h4>  What's the Cuisine type of your restaurant  ? </h4>
+        <select class="form-control" ng-model="res.type"  name="cusisine" id="">
+
+
+            <option value ="Mexican" >Mexican</option>
+            <option value ="Italian">Italian</option>
+        </select>
+        <h4>  Select your City ? </h4>
+        <select class="form-control" ng-model="res.city"  name="city" id="">
+
+            <option  value ="Pittsburgh" >Pittsburgh</option>
+            <option value ="Chandler" >Chandler</option>
+        </select>
+
+        <br>
+        <button class="btn-warning btn btn-large" ng-click="showData()">Crunch Data</button>
+
+    </div>
+
+    <div class="row mapData"  ng-show="showMap">
+
+        <div class="contain-map">
+
+
+
+        <div  style="color:white" class="col-md-4  text-center">
+
+           <div class="content">
+               <div class="row" >
+                    <h4>Found {{count}} {{properties[0].type}} Restaurant's in your city </h4>
+                   <h5>We will predict your hourly customer base based on this data</h5>
+                   <br>
+                   <button class="btn btn-large btn-warning" ng-click="predictData(properties[0].type,properties[0].city)">Predict Customer's</button>
+               </div>
+           </div>
+
+
+        </div>
+            <div class="col-md-8">
+            <div class="mapIt">
+                <ng-map center="{{mapLatitude}},{{mapLongitude}}"zoom="13" style="display:block;">
+                	<marker  label="Hey" position="{{mapLatitude}},{{mapLongitude}}"></marker>
+                <!--<ng-map center="{{mapLatitude}},{{mapLongitude}}" zoom="14">-->
+                    <div ng-repeat="p in properties">
+
+                    <!--<marker  label={{p.price}} position="{{p.latitude}}, {{p.longitude}}"></marker>-->
+                         <custom-marker id="{{p.businessId}}" position="{{p.latitude}}, {{p.longitude}}"
+                                       on-click="showproperty(p)">
+
+                            <div class="customtooltip">
+                                   <span data-toggle="tooltip">* {{p.rating}}</span>
+
+                            </div>
+                           </custom-marker>
+
+                    </div>
+                     <!--<info-window   id="bar">-->
+                        <!--<div>-->
+                            <!--<img src={{limage}} class="custominforwindow">-->
+                            <!--<div ng-non-bindable >-->
+                                <!--<div class="pricestyle">-->
+                                    <!--<span >{{p.ratings | currency}}</span>-->
+                                    <!--<span ><img src="images/instantbookicon.png">-->
+                                <!--</span>-->
+                                <!--</div>-->
+                                <!--<p class="propertynameinfowindow">{{p.title}}</p>-->
+                                <!--<span class="infowindowtypeproperty">{{p.roomType}}</span>-->
+
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</info-window>-->
+                </ng-map>
+            </div>
+        </div>
+
+        </div>
+
+    </div>
+
+</div>
+</div>
+</div>

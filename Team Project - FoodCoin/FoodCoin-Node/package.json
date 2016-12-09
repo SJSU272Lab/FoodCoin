@@ -1,0 +1,24 @@
+{
+  "name": "MongoLoginApplication",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "authy": "*",
+    "bcrypt-nodejs": "0.0.3",
+    "body-parser": "^1.15.2",
+    "client-sessions": "*",
+    "cookie-parser": "^1.4.3",
+    "csv-parse": "^1.1.7",
+    "ejs": "*",
+    "express": "3.2.6",
+    "multer": "^1.2.0",
+    "twilio": "*",
+    "mongoose":"*"
+
+  },
+  "devDependencies": {
+  }
+}

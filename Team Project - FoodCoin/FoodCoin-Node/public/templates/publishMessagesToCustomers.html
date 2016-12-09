@@ -1,0 +1,19 @@
+<div class="next-card">
+	<div class="next-card-filter">
+		<div class="next-card-content customer-predict">
+			<div class="col-md-12 text-center" style="m"><span class="alert alert-success alert-dismissible" ng-show="successPublish">{{msg}}</span></div>
+			<div class="col-md-12 text-center" style="m"><span class="alert alert-success alert-dismissible" ng-show="successPublish">{{msg}}</span></div>
+			<div class="col-md-12 text-center"><span class="alert alert-danger alert-dismissible" ng-show="failurePublish">{{msg}}</span>
+			<div class="form-style-6">
+				<h1>Enter the Offer to be Published to subscribed Users</h1>
+				<form>
+					<input type="text" name="field1" placeholder="Your Name" /> 
+					<textarea ng-model="message" placeholder="Type your Message"></textarea>
+					<button ng-click="publishMessage()" class="btn btn-default btn-lg text-center">
+								Publish Message
+					</button>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>

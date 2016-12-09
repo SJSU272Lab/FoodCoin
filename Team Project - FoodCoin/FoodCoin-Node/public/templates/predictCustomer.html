@@ -1,0 +1,88 @@
+<div class="next-card">
+    <div class="next-card-filter">
+
+
+        <div class="next-card-content customer-predict">
+                <div class="row">
+                    <div class="col-md-9">
+
+
+                    <div class="row">
+
+                        <div   class="col-md-3">
+                            <h2>Day</h2>
+                        </div>
+                        <div class="col-md-9">
+                            <h2>Expected Customers</h2>
+                        </div>
+
+                    </div>
+                    <div ng-show="sunday" class="row text-center">
+                        <div   class="col-md-3">
+                            <h3>Sunday</h3>
+                        </div>
+                        <div class="col-md-9">
+                            <h3>{{totalSunday}}</h3>
+                        </div>
+                    </div>
+                    <div ng-show="monday" class="row text-center">
+                        <div   class="col-md-3">
+                            <h3>Monday</h3>
+                        </div>
+                        <div class="col-md-9">
+                            <h3>{{totalMonday}}</h3>
+                        </div>
+                    </div>
+                    <div ng-show="tuesday" class="row text-center">
+                        <div   class="col-md-3">
+                            <h3>Tuesday</h3>
+                        </div>
+                        <div class="col-md-9">
+                            <h3>{{totalTuesday}}</h3>
+                        </div>
+                    </div>
+                    <div ng-show="wednesday" class="row text-center">
+                    <div   class="col-md-3">
+                        <h3>Wednesday</h3>
+                    </div>
+                    <div class="col-md-9">
+                        <h3>{{totalWednesday}}</h3>
+                    </div>
+                </div>
+                    <div ng-show="thursday" class="row text-center">
+                    <div   class="col-md-3">
+                        <h3>Thursday</h3>
+                    </div>
+                    <div class="col-md-9">
+                        <h3>{{totalThursday}}</h3>
+                    </div>
+                </div><div ng-show="friday"  class="row text-center" >
+                    <div  class="col-md-3">
+                        <h3>Friday</h3>
+                    </div>
+                    <div class="col-md-9">
+                        <h3>{{totalFriday}}</h3>
+                    </div>
+                </div><div ng-show="saturday" class="row text-center">
+                    <div   class="col-md-3">
+                        <h3>Saturday</h3>
+                    </div>
+                    <div class="col-md-9 text-center">
+                        <h3>{{totalSaturday}}</h3>
+                    </div>
+                </div>
+                </div>
+                    <div class="col-md-3 display">
+                        <br>
+                        <br>
+                        <h4>Your Selected  Timings</h4>
+                        <h5 >{{timings}}</h5>
+                    </div>
+
+        </div>
+            <div class="next-card-footer">
+                <button class="btn  next-btn" ng-click="next()">NEXT</button>
+            </div>
+    </div>
+
+</div>

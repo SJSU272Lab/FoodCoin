@@ -1,0 +1,17 @@
+Dish_id,Dish,Ingredient1_name,Ingredient1_qty,Ingredient2_name,Ingredient2_qty,Ingredient3_name,Ingredient3_qty,Ingredient4_name,Ingredient4_qty
+1,Cold Tofu,Tofu,0.65,Ginger,0.05,Onion,0.1,Katsuobushi,0.2
+2,Fried Tofu,Tofu,0.8,Sesame seeds,0.021,Garlic,0.1,Ginger,0.079
+3,Green Soybeans,Green Soybeans,0.9,Salt,0.05,Sugar,0.03,Cardamom,0.02
+4,Chicken Teriyaki,Boneless chicken,0.5,Soy Sauce,0.35,Ginger,0.075,Honey,0.075
+5,Beef Teriyaki,Beef rump steak,0.8,Soy Sauce,0.15,Garlic,0.075,Honey,0.075
+6,Salmon Teriyaki,Salmon,0.5,Soy Sauce,0.3,Lemon Juice,0.1,Garlic,0.1
+7,Broiled Salmon,Salmon fillets,0.6,Worcestershire sauce,0.2,Butter,0.1,Garlic,0.1
+8,Pork Cutlet,Boneless rib pork,0.7,Bread,0.1,Flour,0.1,Eggs,0.1
+9,Jalapanese Ham Burger Steak,Beef rump steak,0.6,Bread,0.2,Onion,0.1,Eggs,0.1
+10,Deep Fried Chicken,Boneless chicken,0.7,Onion,0.05,Milk,0.05,Flour,0.2
+11,Assorted Tempura,Sweet Potato,0.6,Onion,0.05,Lemon Juice,0.05,Flour,0.2
+12,Vegetable Tempura,Sweet Potato,0.6,Onion,0.05,Lemon Juice,0.05,Eggs,0.2
+13,Roll Combo,Rice,0.4,Tuna,0.2,Salmon,0.2,Flour,0.2
+14,Sushi,Rice,0.4,Tuna,0.2,Salmon,0.2,Nori,0.2
+15,Tempura,Potato,0.6,Flour,0.2,Eggs,0.1,Coconut,0.1
+17,Salad,Lettuce,0.25,Beetroot,0.25,Tomato,0.25,Onion,0.25

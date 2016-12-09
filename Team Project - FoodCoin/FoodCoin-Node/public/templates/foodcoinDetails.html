@@ -1,0 +1,53 @@
+<!--     <nav class="header-include navbar navbar-custom navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                    Menu <i class="fa fa-bars"></i>
+                </button>
+                
+                <div>
+                	<a class="navbar-brand page-scroll" ui-sref="index">
+                    	<img alt="" style="height: 30px;width: 130px" src="img/foodcoin.png">
+               		 </a>
+                </div>
+            </div>
+
+            Collect the nav links, forms, and other content for toggling
+            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                <ul class="nav navbar-nav">
+                    Hidden li included to remove active class from about link when scrolled up past about section
+                    <li class="hidden">
+                        <a target="_self" href="#page-top"></a>
+                    </li>
+                    <li>
+						<button ui-sref="index" class="btn btn-default btn-lg text-center">
+								Back To Home Page
+						</button>
+					</li>
+                </ul>
+            </div>
+            /.navbar-collapse
+        </div>
+        /.container
+    </nav> -->
+	<div class="header-include" ng-include="'templates/header.html'"></div>
+    <!-- Contact Section -->
+    <div id="detailsFoodcoin" class="container text-center" style="padding-bottom: 5%;padding-top: 7%;">
+        <div class="container vid-bg">
+        	<div class="col-md-12" style="text-align: justify;">
+        		<h2>About</h2>
+                <p> 40 percent of food in the United States alone today goes uneaten. This means that Americans are throwing out the equivalent of $165 billion each year.</p>
+                <p>Reducing food losses by just 15 percent would be enough food to feed more than 25 million Americans every year at a time when one in six Americans lack a secure supply of food to their tables. Increasing the efficiency of our food system is a triple-bottom-line solution that requires collaborative efforts by businesses, governments and consumers.</p>
+                <p>Businesses should seize opportunities to streamline their own operations, reduce food losses and save money. This is where we fit in. We provide solutions for businesses to optimize their operations enabling them to reduce food wastage and save money.</p>
+        	</div>
+            <div id="graph" class="col-md-6" style="height: 400px"></div>
+            <div id="graph2" class="col-md-6" style="height: 400px"></div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer style="">
+        <div class="container text-center">
+            <p style="font-size: 15px">Copyright &copy; FoodCoin 2016</p>
+        </div>
+    </footer>
