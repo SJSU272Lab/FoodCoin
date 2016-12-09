@@ -1,4 +1,5 @@
 
+
 from flask_cors import CORS, cross_origin
 from flask import jsonify
 import os
@@ -26,14 +27,19 @@ def welcome():
 @cross_origin()
 def insert_expense():
     request_json = request.get_json(force=True)
-    inputdata=[]
-    inputdata.append(request_json['day'])
-    inputdata.append(request_json['daytype'])
-    inputdata.append(request_json['dishes'])
-    inputdata.append(request_json['guest'])
-    outputdata={}
-    outputdata=Decision_Tree2.calculateQuantity(inputdata)
-    output= int(outputdata.keys()[0])
+
+    output=[]
+    for i in range(0,len(request_json)):
+        inputdata = []
+        inputdata.append(request_json[i]['day'])
+        inputdata.append(request_json[i]['daytype'])
+        #inputdata.append(request_json[i]['dishes'])
+        inputdata.append(request_json[i]['guest'])
+        outputdata={}
+        outputdata=Decision_Tree2.calculateQuantity(inputdata)
+        print outputdata
+        output.append(int(outputdata.keys()[0]))
+    print output
     output={"Quantity":output}
 
 
@@ -73,7 +79,7 @@ def inputTrainData():
         list = []
         list.append(i["day"])
         list.append(i["daytype"])
-        list.append(i["dishes"])
+        #list.append(i["dishes"])
         list.append(i["guest"])
         list.append(i["quantity"])
         print list
@@ -97,8 +103,8 @@ def analyseReviews():
     print negative
     print positive
     output={}
-    output["Negative Percent"]=negative
-    output["Positive Percent"]=positive
+    output["NegativePercent"]=negative
+    output["PositivePercent"]=positive
     return jsonify(output)
 
 @app.route('/wasteChange',methods=['GET'])
@@ -113,3 +119,6 @@ def wasteChanges():
 port = os.getenv('PORT', '5000')
 if __name__ == '__main__':
     app.run(host='0.0.0.0',port=int(port))
+
+
+
