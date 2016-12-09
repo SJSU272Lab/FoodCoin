@@ -1,0 +1,53 @@
+<div class="next-card">
+    <div class="next-card-filter">
+
+
+    <div class="next-card-content">
+        <div class="selected-days">
+            <button ng-repeat="b in buttons" class="selected-day btn btn-success" >{{b}}</button>
+        </div>
+        <div class="jumbotron text-center">
+            <h3>Select your Business Days</h3>
+            <div class="row days">
+
+
+                <div class="col-md-6">
+                    <button class="btn  next-button airbnb-color week" ng-class="Monday" ng-click=" day('Monday')">Monday</button>
+                </div>
+                <div class="col-md-6">
+                    <button class="btn  next-button airbnb-color week " ng-class="Tuesday" ng-click="day('Tuesday')">Tuesday</button>
+                </div>
+            </div>
+            <div class="row days">
+
+                <div class="col-md-6">
+                    <button class="btn  next-button airbnb-color week " ng-class="Wednesday" ng-click="day('Wednesday')">Wednesday</button>
+                </div>
+                <div class="col-md-6">
+                    <button class="btn  next-button airbnb-color week " ng-class="Thursday" ng-click="day('Thursday')">Thursday</button>
+                </div>
+
+            </div>
+            <div class="row days">
+
+                <div class="col-md-6">
+                    <button class="btn  next-button airbnb-color week " ng-class="Friday" ng-click="day('Friday')">Friday</button>
+                </div>
+                <div class="col-md-6">
+                    <button class="btn  next-button airbnb-color week" ng-class="Saturday" ng-click="day('Saturday')">Saturday</button>
+                </div>
+
+            </div>
+            <div class="row days">
+                <div class="col-md-12">
+                    <button class="btn  next-button airbnb-color  week " ng-class="Sunday" ng-click="day('Sunday')">Sunday</button>
+                </div>
+            </div>
+
+        </div>
+        <div class="next-card-footer">
+            <button class="btn  next-btn" ng-click="next()">NEXT</button>
+        </div>
+    </div>
+    </div>
+</div>

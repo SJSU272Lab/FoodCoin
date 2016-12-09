@@ -1,0 +1,47 @@
+<div class="next-card">
+    <div class="next-card-filter">
+
+
+    <div  class=" sentiment">
+
+    	<div class="bg-cook row">
+    	   <div class="col-md-6">
+               <div style="width:95%; margin:10px auto" class="row">
+
+                   <h2>Identify your customer mood </h2>
+                   <h5>Upload your past customer feedback and we will tell you,
+                    How happy is your customer with your services, foodQuality and and quantity they are served </h5>
+                   <form name="dataUpload">
+                       <button required class="airbnb-color next-button btn btn-size week" ngf-model-invalid="errorFile"   ngf-pattern="'.csv'"  ng-hide="up.file" ngf-select ng-model="up.file" name="file1" accept="application/csv"  ngf-max-size="2MB"><i style="padding:5px "class="fa fa-cloud-upload" aria-hidden="true"></i>Upload File</button>
+
+                       <div ng-hide="trained" >
+                           <button  class="airbnb-color btn next-button week " ng-show="up.file" ngf-select ng-model="up.file" name="file" ngf-pattern="'.csv'" accept="application/csv"  ngf-max-size="2MB"><i class="fa fa-cloud-upload" style="padding:5px " aria-hidden="true"></i>Change FIle</button>
+                       </div>
+                       <span ng-hide="trained">{{up.file.name}}</span>
+
+                       <i style="color:black" class="upload-required" ng-hide="up.file">*required Max Size 2 Mb Format *.csv</i>
+                       <br>
+                       <i class=" upload-error" ng-show="dataUpload.file1.$error.pattern">File should be of the format *.csv</i>
+                       <i class=" upload-error" ng-show="dataUpload.file.$error.pattern">File should be of the format *.csv</i>
+
+                       <i class="upload-error" ng-show="dataUpload.file.$error.maxSize">File too large
+                           {{up.file.size / 1000000|number:1}}MB: max 2Mb</i>
+
+                       <div class="next-card-footer text-center">
+
+                           <!--<button  ng-click="uploadImage()" class="btn next-button   week" >NEXT</button>-->
+                           <button ng-show="up.file" ng-disabled="dataUpload.$invalid" ng-click="uploadImage(up.file)" class="btn next-button   week" >Check Customer Feedback</button>
+                           <!--<button ng-show="trained" ng-click="next()" class="btn next-button   week" >Next</button>-->
+                       </div>
+                   </form>
+               </div>
+
+           </div>
+            <div class="col-md-6">
+                <img style="width:100%" src="../img/sentiment.png" alt="">
+            </div>
+    	</div>	
+
+   </div>
+ </div>
+</div>

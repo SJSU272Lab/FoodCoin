@@ -1,0 +1,313 @@
+
+.step1
+{
+  width:50%;
+  margin:  auto;
+  top:10%;
+  position: relative;
+  background-color: rgba(69,139,116,0.4);
+  color:white;
+  min-height:300px;
+  height:auto;
+  border-radius: 5px;
+  border:2px solid aquamarine;
+}
+.step1 h4
+{
+  margin: 10px;
+}
+.step1 select
+{
+  width:70%;
+  margin: 10px auto;
+
+}
+.wrapper
+{
+  position: fixed	;
+  background:rgba(0,0,0,0.4);
+  z-index:1000;
+  top:0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transition: opacity 400ms ease-in;
+
+}
+
+.tripcontainerall{
+  padding-right: 0px;
+  padding-top: 120px;
+}
+.mapclass{
+  margin-top: -20px;
+  padding-right: 0px;
+  /*padding-top:90px;*/
+
+}
+.customtooltip{
+  background-color: #ff5a5f;
+  left: -50%;
+  top: -34px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  box-shadow: 0 0 0 1px rgba(0,0,0,0.3);
+  display: block;
+}
+.customtooltip span
+{
+  padding: 5px;
+}
+.price-marker{
+  display:inline;
+}
+.custominforwindow{
+  width: 280px;
+  background: #fff;
+  border-radius: 2px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+.pricestyle{
+  font-size: 24px;
+  font-weight: normal;
+  display: inline-block;
+  box-sizing: border-box;
+  color: #fff;
+  background-color: rgba(45,45,45,0.9);
+  font-family: "Circular", "Helvetica Neue", Arial, sans-serif;
+  margin-top:-42px;
+  padding:3px;
+}
+.propertynameinfowindow{
+
+  margin-top:8px;
+  color:#484848;
+  font-size: 14px;
+  font-family: "Circular", "Helvetica Neue", Arial, sans-serif;
+  font-weight: 400;
+  line-height: 2px;
+}
+.infowindowtypeproperty{
+
+  font-family:  "Helvetica Neue", Arial, sans-serif;
+  font-size: 12px;
+  color:#767676;
+  line-height: 17px;
+}
+
+.showMap
+{
+  width:80%;
+  margin:auto;
+}
+
+.step1 button
+{
+
+  padding: 5px;
+
+}
+
+.content
+{
+  width:90%;
+  padding: 50px;
+}
+
+.next-card
+{
+
+  background: url("../img/nextImage.jpg") no-repeat center;
+  background-size: cover;
+  height:700px;
+  width:100%;
+  color: dimgrey;
+ box-shadow: #767676;
+  position: fixed;
+
+}
+
+.next-card1
+{
+
+  background: url("../img/nextImage.jpg") no-repeat center;
+  background-size: cover;
+  height:auto;
+  width:100%;
+  color: dimgrey;
+ box-shadow: #767676;
+}
+
+.next-card-content
+{
+  width:80%;
+  margin: auto;
+  padding: 100px;
+}
+.next-card-footer
+{
+  bottom: 0;
+}
+
+.next-button ,.next-button :hover,.next-btn
+{
+
+  width:200px;
+  border-radius:0 ;
+  background-color:aqua;
+  height:60px;
+  border-color:aquamarine;
+}
+
+.next-btn
+{
+  float:right;
+}
+.next-card-filter
+{
+  height: inherit;
+  width:inherit;
+  margin: auto;
+  background-color: rgba(0,0,0,0.5);
+}
+.next-card-content .jumbotron,.businessTime
+{
+  height:400px;
+  box-shadow: #767676;
+  margin-bottom: 5px;
+}
+
+.week
+{
+  width:300px;
+
+
+}
+.days{
+
+  margin: 10px;
+}
+
+.airbnb-color
+{
+  border-color: #ff5a5f;
+  color: white;
+  background-color: #ff5a5f;
+}
+.button-selected
+{
+  border-color: #ff5a5f;
+  background-color: #767676;
+}
+
+.btn :hover
+{
+  background-color: transparent ;
+}
+
+.time
+{
+  padding-top: 70px;
+  width:90%;
+  margin:auto;
+}
+
+.time select
+{
+  height:60px;
+  border-radius:0 ;
+  width:150px;
+  border-color:aquamarine;
+  padding: 5px;
+  text-align: center;
+  color:#ff5a5f;
+  font-size: 25px;
+}
+.businessTime
+{
+    background-color: transparent;
+  color:white;
+}
+.customer-predict
+{
+  color:white;
+}
+
+.display
+{
+  height:300px;
+  border-radius: 5px;
+  box-shadow: #484848;
+  background-color: white;
+  color:black;
+  text-align:center;
+}
+.display h5
+{
+  padding-top: 50px;
+  font-weight: bolder;
+  font-size: 20px;
+}
+.upload-error
+{
+  color:orangered;
+  font-size: 15px;
+
+}
+
+.upload-required
+{
+  color:white;
+}
+
+.system-predict
+{
+  width: 70%;
+  min-height: 400px;
+  height:auto;
+  top:15%;
+  position: relative;
+  margin: auto;
+  text-align: center;
+  background-color: white;
+  box-shadow: 2px 2px 2px 0;
+
+}
+.sentiment
+{
+  width: 85%;
+  min-height: 400px;
+  height:auto;
+  top:15%;
+  position: relative;
+  margin: auto;
+  text-align: center;
+  background-color: white;
+  box-shadow: 2px 2px 2px 0;
+}
+.bg-cook
+{
+  width:95%;
+  top:15%;
+  height: 400px;
+  position: relative;
+}
+
+.bg-cook div
+{
+  height: inherit;
+}
+.mapData
+{
+  width:inherit;
+  height: 100%;
+
+}
+.contain-map
+{
+  width:95%;
+  margin:auto;
+  position: relative;
+  top: 10%;
+}

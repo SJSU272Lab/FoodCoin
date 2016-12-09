@@ -1,0 +1,64 @@
+<div class="next-card">
+    <div class="next-card-filter">
+
+
+        <div class="next-card-content">
+            <div class="selected-days">
+                <button ng-repeat="b in buttons" class="selected-day btn btn-success" >{{b}}</button>
+            </div>
+            <div class="businessTime text-center">
+                <h3>Select your Business Hours</h3>
+                <div class="row time">
+                    <div class="col-md-3">
+                        <select class="form-control" ng-model="time.from" name="fromTime" id="">
+                            <option value="1" >1</option>
+                            <option value="2" >2</option>
+                            <option value="3" >3</option>
+                            <option value="4" >4</option>
+                            <option value="5" >5</option>
+                            <option value="6" >6</option>
+                            <option value="7" >7</option>
+                            <option value="8" >8</option>
+                            <option value="9" >9</option>
+                            <option value="10" >10</option>
+                            <option value="11" >11</option>
+                            <option value="12" >12</option>
+                        </select>
+                    </div>
+                    <div class="col-md-3">
+                        <select class="form-control" name="mer"  ng-model="time.fromM">
+                            <option selected value="AM">AM</option>
+                            <option value="PM">PM</option>
+                        </select>
+                    </div>
+                    <div class="col-md-3">
+                        <select class="form-control" ng-model="time.till" name="fromTime" id="">
+                            <option value="1" >1</option>
+                            <option value="2" >2</option>
+                            <option value="3" >3</option>
+                            <option value="4" >4</option>
+                            <option value="5" >5</option>
+                            <option value="6" >6</option>
+                            <option value="7" >7</option>
+                            <option value="8" >8</option>
+                            <option value="9" >9</option>
+                            <option value="10" >10</option>
+                            <option value="11" >11</option>
+                            <option value="12" >12</option>
+                        </select>
+                    </div>
+                    <div class="col-md-3">
+                        <select class="form-control" name="mer"  ng-model="time.tillM">
+                            <option selected value="AM">AM</option>
+                            <option value="PM">PM</option>
+                        </select>
+                    </div>
+
+                </div>
+            </div>
+            <div class="next-card-footer">
+                <button class="btn  next-btn" ng-click="next()">NEXT</button>
+            </div>
+        </div>
+    </div>
+</div>

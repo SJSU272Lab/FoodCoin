@@ -1,0 +1,73 @@
+<div class="next-card">
+    <div class="next-card-filter">
+
+
+        <div ng-hide="recommend" class="next-card-content customer-predict">
+
+            <div class="row">
+
+                <div class="row">
+                    <div ng-hide="trained" class="col-md-12 text-center">
+                        <h1>Train our System Now</h1>
+                        <h4>Upload your restaurant past data then we will recommend daily food quantity to be prepared </h4>
+                    </div>
+
+                    <div ng-show="trained" class="col-md-12 text-center">
+                        <h1>You have successfully trained the system</h1>
+                        <h4>Now let us recommend your daily food quantity to be prepared </h4>
+                    </div>
+
+                    <div class="col-md-12 text-center" style="padding-top:10px" >
+                        <!--<button class=""><i class="fa fa-cloud-upload" aria-hidden="true"></i></button>-->
+                        <br>
+                        <form name="dataUpload">
+
+                            <!--<input type="file" file-reader="fileContent" />-->
+                            <!--{{fileContent}}-->
+                            <button required class="airbnb-color next-button btn btn-size week" ngf-model-invalid="errorFile"   ngf-pattern="'.csv'"  ng-hide="up.file" ngf-select ng-model="up.file" name="file1" accept="application/csv"  ngf-max-size="2MB"><i style="padding:5px "class="fa fa-cloud-upload" aria-hidden="true"></i>Upload File</button>
+                            <br>
+                            <div ng-hide="trained" >
+                                <button  class="airbnb-color btn next-button week " ng-show="up.file" ngf-select ng-model="up.file" name="file" ngf-pattern="'.csv'" accept="application/csv"  ngf-max-size="2MB"><i class="fa fa-cloud-upload" style="padding:5px " aria-hidden="true"></i>Change FIle</button>
+                            </div>
+
+                            <br>
+                            <span ng-hide="trained">{{up.file.name}}</span>
+                            <i class="upload-required" ng-hide="up.file">*required Max Size 2 Mb Format *.csv</i>
+                            <br>
+                            <i class=" upload-error" ng-show="dataUpload.file1.$error.pattern">File should be of the format *.csv</i>
+                            <i class=" upload-error" ng-show="dataUpload.file.$error.pattern">File should be of the format *.csv</i>
+                            <br>
+                            <i class="upload-error" ng-show="dataUpload.file.$error.maxSize">File too large
+                                {{up.file.size / 1000000|number:1}}MB: max 2Mb</i>
+                            <br>
+                            <div class="next-card-footer text-center">
+                                <br>
+                                <!--<button  ng-click="uploadImage()" class="btn next-button   week" >NEXT</button>-->
+                                <button ng-hide="trained" ng-disabled="dataUpload.$invalid" ng-click="uploadImage(up.file)" class="btn next-button   week" >Upload</button>
+                                <button ng-show="trained" ng-click="dailyQuantity()" class="btn next-button   week" >Recommend</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+        </div>
+
+        <div ng-show="recommend" class="system-predict ">
+            <div class="bg-cook row">
+            <div style="top:35%; padding-left: 20px"class="col-md-6">
+                <h3>Our System recommends you to prepare <strong>{{amount}} kg's </strong>for your expected {{customer}} customer's </h3>
+                <button ng-show="recommend" ng-click="next()" class="btn next-button   week" >Next</button>
+            </div>
+            <div class="col-md-6 ">
+                <img src="../img/cook.jpg" style="height:inherit;width:inherit" alt="">
+            </div>
+            </div>
+        </div>
+
+
+    </div>
+</div>

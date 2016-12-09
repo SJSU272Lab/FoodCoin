@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title><%= title %></title>
+	
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<!-- Bootstrap Core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+
+    <!-- Theme CSS -->
+    <link href="css/grayscale.min.css" rel="stylesheet">
+    
+    
+     <link href="css/angular-growl.min.css" rel="stylesheet" media="screen"/>
+     
+     
+    <!-- Custom CSS  -->
+    <link rel='stylesheet' href='/stylesheets/landingPage.css' />
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    
+      	<!-- jQuery --> 
+   	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <!-- Plugin JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    
+    <script
+			src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+	<script
+			src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-route.js"></script>
+	<script
+			src="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.js"></script>
+	<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.1/angular-ui-router.js"></script>
+	<script
+			src="//angular-ui.github.io/ui-router/release/angular-ui-router.js"></script>
+	<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/angular-messages/1.5.8/angular-messages.js"></script>
+	<script
+			src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-animate.min.js"></script>
+
+	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-sanitize.js"></script>
+	<script
+			src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-aria.min.js"></script>
+	<script
+			src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-messages.min.js"></script>
+	<script src="//angular-ui.github.io/bootstrap/ui-bootstrap-tpls-2.2.0.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-route.js"></script>
+   
+   <script src="js/angular-growl.min.js"></script>
+
+	  <!-- image upload  -->
+  <script type="https://cdnjs.cloudflare.com/ajax/libs/danialfarid-angular-file-upload/12.2.13/ng-file-upload.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/danialfarid-angular-file-upload/12.2.13/ng-file-upload.min.js"></script>
+
+
+   	<!-- For Highcharts -->
+   	<script src="https://code.highcharts.com/highcharts.js"></script>
+   	<script src="https://code.highcharts.com/highcharts-more.js"></script>
+   	  	
+	<script src="https://code.highcharts.com/highcharts-3d.js"></script>
+	<script src="https://code.highcharts.com/modules/exporting.js"></script>
+	<script src="https://code.highcharts.com/modules/data.js"></script>
+	<script src="https://code.highcharts.com/modules/drilldown.js"></script>
+	<script src="https://code.highcharts.com/modules/solid-gauge.js"></script>
+   	<!-- Theme JavaScript -->
+    <!-- <script src="js/grayscale.min.js"></script>	 -->
+   	<!--  -->
+	
+	<script> location.hash = (location.hash) ? location.hash : " "; </script>
+
+
+	 <!-- Google Map  -->
+	<script src="scripts/ng-map.min.js"></script>
+	<script src="http://maps.google.com/maps/api/js?key=AIzaSyDX8yxqHUhD_AzzRvLklYYLfjtrBooglqY"></script>
+
+
+
+	
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+	
+	<!-- Loading the AngularJS file from /public/angularJS folder -->
+	<script src="angularjs/indexClient.js"></script>
+	<script src="angularjs/controllers/indexController.js"></script>
+	<script src="angularjs/controllers/detailsController.js"></script>
+	<script src="angularjs/controllers/sampleDisplayController.js"></script>
+	<script type="text/javascript" src="angularjs/controllers/userHome.js"></script>
+	  <script type="text/javascript" src="angularjs/controllers/businessHour.js"></script>
+	  <script type="text/javascript" src="angularjs/controllers/businessTime.js"></script>
+	  <script type="text/javascript" src="angularjs/controllers/predictCustomer.js"></script>
+	  <script type="text/javascript" src="angularjs/controllers/getData.js"></script>
+	   <script type="text/javascript" src="angularjs/controllers/publishMessagesToCustomers.js"></script>
+		<script type="text/javascript" src="angularjs/controllers/sentiment.js"></script>
+	<script type="text/javascript" src="angularjs/controllers/dashboard.js"></script>
+
+</head>
+<body ng-app="index" id="page-top" class="navbar-inverse" data-spy="scroll" data-target=".navbar-fixed-top" style="overflow-x: hidden">
+	<ui-view autoscroll="true"></ui-view>
+</body>
+</html>
