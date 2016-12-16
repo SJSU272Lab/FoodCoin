@@ -28,6 +28,11 @@ Benefits of analytics include:<br /><br />
     a) Help management to decide the quantity of food item to be served to user.<br />
     b) Assist in predicting the likes and dislikes of users.<br />
 <br />
+## Project Deliverables
+
+[Presentation Slides] (Project Deliverables/Presentation Slides.pdf) <br/>
+[Project Report] (Project Deliverables/Project Report.pdf)
+
 # Architectural Flow Diagram:<br />
 ![alt Architecture diagram]( /Team Project - FoodCoin/Architecture Design.png?raw=true "Architecture Diagram")
 
