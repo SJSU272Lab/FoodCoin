@@ -30,8 +30,8 @@ Benefits of analytics include:<br /><br />
 <br />
 ## Project Deliverables
 
-[Presentation Slides] (Project Deliverables/Presentation Slides.pdf) <br/>
-[Project Report] (Project Deliverables/Project Report.pdf)
+[Presentation Slides] (/FoodCoin Demo.pptx) <br/>
+[Project Report] (/Team Project - FoodCoin/Report FoodCoin Team 8.pdf)
 
 # Architectural Flow Diagram:<br />
 ![alt Architecture diagram]( /Team Project - FoodCoin/Architecture Design.png?raw=true "Architecture Diagram")
