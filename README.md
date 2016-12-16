@@ -35,4 +35,8 @@ Benefits of analytics include:<br /><br />
 # Flow Chart:<br />
 ![alt Architecture diagram]( /Team Project - FoodCoin/Flow Chart.png?raw=true "Architecture Diagram")
 
+## Team Members
+
+| [![Amit Sharma](https://avatars.githubusercontent.com/amitwork?s=100)<br /><sub>Amit Sharma</sub>](https://github.com/amitwork)<br /> | [![Mayank Tanwar](https://avatars.githubusercontent.com/mayanktanwar5?s=100)<br /><sub>Mayank Tanwar</sub>](https://github.com/mayanktanwar5)<br /> | [![Navneet Jain](https://avatars.githubusercontent.com/navijain90?s=100)<br /><sub>Navneet Jain</sub>](https://github.com/navijain90)<br />| [![Prateek Sharma](https://avatars.githubusercontent.com/prateeksharmamay?s=100)<br /><sub>Prateek Sharma</sub>](https://github.com/prateeksharmamay)<br />|
+
 
